@@ -28,6 +28,20 @@ Go to Git main page (https://git-scm.com/), download and install.
 > $ git clone https://github.com/nanielito/ForestControl.git
 ```
 
+## Build Project
+
+You can build the project through command line:
+```bash
+> $ dotnet build
+```
+
+You can clean the project through command line:
+```bash
+> $ dotnet build
+```
+
+Or let these steps to be executed automatically by your IDE of preference.
+
 ## Console Application 
 
 You can execute the console application through command line:
