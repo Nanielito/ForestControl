@@ -38,7 +38,7 @@ Or using an IDE of your preference if you configure a "Run Command".
 
 ### Test Cases
 
-There is a directory called "testCases" into "/src/resources" path, you must place your test cases there to be ran by the console application.
+There is a directory called _"testCases"_ into _"/src/resources"_ path, you must place your test cases there to be ran by the console application.
 
 #### Test Case File Format
 
@@ -47,7 +47,7 @@ A test case file must have the following format:
 * The following lines must be grouped in pairs following this rule:   
   * A initial line which defines two consecutive integers separated by a space plus a character.
     * The integers represent a position (X, Y) into the rectangle.
-    * The character represents a direction (N, S, E, W).
+    * The character represents a direction (N for North, S for South, E for East, W for West).
   * The following line defines a string formed by characters M,L,R which represent a group of action to be executed  
     * M for moving forward.
     * L for turning left.
