@@ -37,7 +37,7 @@ You can build the project through command line:
 
 You can clean the project through command line:
 ```bash
-> $ dotnet build
+> $ dotnet clean
 ```
 
 Or let these steps to be executed automatically by your IDE of preference.
