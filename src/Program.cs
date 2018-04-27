@@ -15,7 +15,7 @@ namespace ForestControl {
     /// Gets the test case files located into <code>TEST_CASES_ROOT_PATH</code>.
     /// </summary>
     /// <returns>An array which contains paths to each test case file.</returns>
-    static string[] GetTestCases() {
+    private static string[] GetTestCases() {
       string currentDirectory = Environment.CurrentDirectory;
       string testCasesDirectory = Path.Combine(currentDirectory, TEST_CASES_ROOT_PATH);
       
@@ -26,7 +26,7 @@ namespace ForestControl {
     /// Executes a test case.
     /// </summary>
     /// <param name="testCaseFilePath">The test case file path.</param>
-    static void ExecuteTestCase(string testCaseFilePath) {
+    private static void ExecuteTestCase(string testCaseFilePath) {
       using (StreamReader streamReader = File.OpenText(testCaseFilePath)) {
         string input = streamReader.ReadLine();
         string[] data = input.Split(" ");
@@ -55,7 +55,7 @@ namespace ForestControl {
     /// The main application entry point.
     /// </summary>
     /// <param name="args">The application arguments.</param>
-    static void Main(string[] args) {
+    public static void Main(string[] args) {
       string[] testCases = GetTestCases();
       
       Array.ForEach(testCases, ExecuteTestCase);
